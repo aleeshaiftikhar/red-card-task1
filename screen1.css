@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 1000px;
+    padding: 25px 0;
+}
+
+header img {
+    width: 80px;
+}
+
+.submission {
+    width: 950px;
+    min-height: 880px;
+    background: #963636;
+    display: flex;
+    padding: 60px;
+    gap: 80px;   
+    color: white;
+}
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  
+    padding-left: 20px;
+    padding-top: 170px;     
+    position: relative;     
+}
+.left h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.left p{
+    width: 340px;
+    font-size: 12px;  
+    line-height: 1.6;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.left h2 {
+    color: #111;
+    font-size: 18px;
+}
+
+.right {
+    width: 60%;
+}
+
+.right input {
+    width: 100%;
+    height: 42px;
+    background: transparent;
+    border: 2px solid #ddd;
+    margin-bottom: 12px;
+    padding: 10px;
+    color: white;
+}
+
+.right input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+.right h2 {
+    color: #111;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.right p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;  
+    gap: 6px;
+}
+label input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border: 1px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+label input[type="checkbox"]:checked::after{
+    content:"✓";
+    color:white;
+    font-size:18px;
+    font-weight:bold;
+    position:absolute;
+    top:-6px;
+    left:0px;
+}
+textarea {
+    width: 100%;
+    height: 58px;
+    background: transparent;
+    border: 2px solid #ddd;
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    margin-top: 30px;
+    width: 395px;   
+    height: 45px;
+    background: white;
+    border: none;
+    color: #555;
+    font-size: 18px;
+}
+.square{
+    width:8px;
+    height:8px;
+    background:white;
+    position:absolute;
+}
+
+.square1{
+    top:315px;
+    left:310px;
+}
+
+.square2{
+    top:395px;
+    left:270px;
+}
+.right{
+    width:60%;
+    position:relative;
+}
+
+.right-square{
+    width:8px;
+    height:8px;
+    background:white;
+    position:absolute;
+}
+
+.right-square1{
+    top:230px;
+    right:220px;
+}
+
+.right-square2{
+    top:340px;
+    right:220px;
+}
+.right-square3{
+    top:460px;
+    right:220px;
+}
+.right-square4{
+    top:585px;
+    right:220px;
+}
+.right-square5{
+    top:695px;
+    right:220px;
+}
+
