@@ -1,204 +1,206 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    margin:0;
-    background:white;
-    padding-bottom:2px;
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
 }
-header{
-    width:1000px;
-    padding:25px 0 10px 0;
-    margin:auto;
+
+header {
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 20px;
 }
 
 header img{
     width:80px;
-    margin-left:30px;
-}
-.submission{
-    width:950px;
-    min-height:880px;  
-    margin:auto;
-    background:#963636;
-    display:flex;
-    gap:95px;
-    padding:60px;
-    color:white;
-    position:relative;
-    overflow:hidden;
-
-    clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 88%,
-        86% 100%,
-        0 100%
-    );
-}
-.left{
-    width:40%;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start;
-    padding-left:20px;
-    padding-top:170px;
-    position:relative;
+    transform: translateY(50px);
 }
 
-.left h1{
-    font-size:45px;
-    font-weight:800;
-    margin-bottom:15px;
+.main {
+    display: flex;
+    width: 99%;
+    margin-left: 15px;
+    min-height: calc(100vh - 80px);
+    background: #923535;
+    margin-bottom: 2px;
+    padding-bottom: 60px;
+    clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+    position: relative;
+    margin-top: 70px;
 }
 
-.left p{
-    width:340px;
-    font-size:12px;
-    line-height:1.6;
-    color:#111;
-    margin-bottom:20px;
+.left {
+    width: 50%;
+    color: rgb(17, 10, 10);
+    padding-top: 280px;
+    padding-left: 110px;
+    position: relative; 
 }
 
-.left h2{
-    font-size:18px;
-    color:#111;
-}
-.right{
-    width:60%;
-    position:relative;
-}
-
-.right input{
-    width:90%;
-    height:42px;
-    background:transparent;
-    border:2px solid #ddd;
-    margin-bottom:12px;
-    padding:10px;
-    color:white;
+.left h1 {
+    font-size: 89px;
+    margin-bottom: 9px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: -1px;
 }
 
-.right input::placeholder,
-textarea::placeholder{
-    color:white;
+.left p {
+    width: 92%;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #110909;
+    margin-bottom: 10px;
 }
 
-.right h2{
-    font-size:22px;
-    color:#111;
-    margin-top:5px;
+.left h2 {
+    font-size: 25px;
+    font-weight: 900;  
+    line-height: 1.4;
+    color: black; 
 }
 
-.right p{
-    color:white;
-    font-size:9px;
-    margin-bottom:10px;
-    white-space:nowrap;
+.left-box {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+}
+.box1 {
+    top: 470px;
+    left: 590px;
+}
+.box2 {
+    top: 560px;
+    left: 560px;
 }
 
-label{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    margin:10px 0;
-    font-size:14px;
-    color:white;
+
+.right {
+    width: 50%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-label input[type="checkbox"]{
-    appearance:none;
-    -webkit-appearance:none;
-    -moz-appearance:none;
-
-    width:10px;
-    height:10px;
-    border:1px solid white;
-    background:transparent;
-    position:relative;
-    cursor:pointer;
-    transform:scale(.5);
-    transform-origin:left center;
+.form-box {
+    width: 430px;
 }
 
-label input[type="checkbox"]:checked::after{
-    content:"✓";
-    position:absolute;
-    top:-2px;
-    left:0;
-    font-size:22px;
-    color:white;
-    font-weight:bold;
+.form-box input[type="text"],
+.form-box input[type="email"],
+.form-box textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid white;
+    padding: 12px;
+    color: rgb(224, 214, 214);
+    margin-bottom: 15px;
+    font-size: 27px;
 }
 
-textarea{
-    width:90%;
-    height:58px;
-    background:transparent;
-    border:2px solid #ddd;
-    padding:10px;
-    resize:none;
-    color:white;
+.form-box input::placeholder,
+.form-box textarea::placeholder {
+    color: white;
+    font-size: 12px;
+    opacity: 0.8;
 }
 
-button{
-    width:330px;
-    height:45px;
-    margin-top:30px;
-    background:white;
-    border:none;
-    color:#555;
-    font-size:18px;
-}
-.square{
-    width:8px;
-    height:8px;
-    background:white;
-    position:absolute;
+.form-box h3 {
+    color: rgb(39, 25, 25); 
+    margin-top: 10px;
+    margin-bottom: 6px;
+    font-weight: 1000;
+    font-size: 28px;
+    letter-spacing: -2px;
 }
 
-.square1{
-    top:315px;
-    left:310px;
+.sub-text {
+    color: white;
+    font-size: 11px;
+    width: 560px;
+    margin-bottom: 20px;
 }
 
-.square2{
-    top:395px;
-    left:310px;
-}
-.right-square{
-    width:8px;
-    height:8px;
-    background:white;
-    position:absolute;
+
+.award-item {
+    margin-bottom: 15px;
 }
 
-.right-square1{
-    top:230px;
-    right:150px;
+.award-header {
+    display: flex;
+  justify-content: flex-start;; 
+    align-items: center;
+    margin-bottom: 7px;
 }
 
-.right-square2{
-    top:340px;
-    right:145px;
+.checkbox-side input[type="checkbox"] {
+    margin-right: 5px;
 }
 
-.right-square3{
-    top:460px;
-    right:148px;
+.checkbox-side label {
+    color: white;
+    font-size: 11px;
 }
 
-.right-square4{
-    top:585px;
-    right:150px;
+
+.right-box {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    margin-left: 265px;
+     position: absolute;
 }
 
-.right-square5{
-    top:695px;
-    right:150px;
+.award-item textarea {
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+.success-btn {
+    width: 90%;
+    background: white;
+    color: #333;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
+.checkbox-side input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    width: 13px;
+    height: 13px;
+    border: 1px solid white;      
+    background-color: #923535;   
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+
+.checkbox-side input[type="checkbox"]:checked::before {
+    content: "✓";
+    position: absolute;
+    color:  white;
+    font-size: 10px;
+    font-weight: bold;
+    top: -2px;
+    left: 1px;
+}

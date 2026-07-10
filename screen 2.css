@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+.container{
+    width:100%;
+   max-width:1400px;
+   margin:0 auto;
+    border:1px none;
+    background:#fff;
+}
+
+header{
+    background:#972d32;
+     min-height:560px;
+    color:white;
+    padding:35px 0 90px;
+    position:relative;
+}
+header::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:90px;
+    height:90px;
+    background:#fff;
+    clip-path:polygon(100% 0, 100% 100%, 0 100%);
+}
+.logo{
+    width:215px;
+    margin:10px 0 25px 70px;
+}
+
+header h1{
+    color:#fff;
+    font-size:110px;
+    font-weight:bold;
+    margin-bottom:8px;
+    letter-spacing:1px;
+    text-align:left;
+    margin-left:70px;
+    
+
+}
+
+header h2{
+    color:black;
+    font-size:56px;
+    font-weight:bold;
+    margin-bottom:20px;
+    text-align:left;
+    margin-left:70px;
+}
+header p{
+    color:#fff;
+    font-size:30px;
+    line-height:1.8;
+    width:1195px;
+    margin-left:70px;
+    text-align:justify;
+
+    transform: scale(0.96);
+    transform-origin: top left;
+}
+.best-clubs{
+    padding:40px 0;
+    background:#fff;
+}
+
+.best-clubs h2{
+    font-size:34px;
+    font-weight:900;
+    text-align:center;
+    margin-bottom:30px;
+    position:relative;
+    transform:translateX(-60px);
+}
+
+.best-clubs h2::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    transform:translateX(-150px);
+    top:14px;
+    width:0;
+    height:0;
+    border-top:10px solid transparent;
+    border-bottom:10px solid transparent;
+    border-left:15px solid #972d32;
+}
+
+.club-logos{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:18px;
+}
+
+.club-logos div{
+    text-align:center;
+}
+
+.club-logo{
+    width:60px;
+    height:60px;
+    display:block;
+    margin:0 auto 10px;
+}
+
+.club-logos p{
+    color:#972d32;
+    font-size:11px;
+    font-weight:bold;
+    line-height:1.4;
+    text-align:center;
+    white-space:nowrap;
+}
+
+footer{
+    background:#972d32;
+    color:#fff;
+    padding:35px 20px;
+    text-align:center;
+}
+
+footer h2{
+    font-size:22px;
+    line-height:1.5;
+    font-weight:bold;
+}
