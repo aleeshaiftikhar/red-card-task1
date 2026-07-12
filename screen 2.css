@@ -11,12 +11,14 @@ body{
 
 .container{
     width:100%;
-   max-width:1400px;
-   margin:0 auto;
-    border:1px none;
+    max-width:1400px;
+    margin:0 auto;
     background:#fff;
-}
 
+    border-top:2px solid #fff;
+   border-left:2px solid #fff;
+   border-right:1px solid #fff;
+}
 header{
     background:#972d32;
      min-height:560px;
@@ -29,14 +31,14 @@ header::after{
     position:absolute;
     bottom:0;
     right:0;
-    width:90px;
-    height:90px;
+    width:120px;
+    height:120px;
     background:#fff;
     clip-path:polygon(100% 0, 100% 100%, 0 100%);
 }
 .logo{
     width:215px;
-    margin:10px 0 25px 70px;
+    margin:10px 0 25px 75px;
 }
 
 header h1{
@@ -46,7 +48,7 @@ header h1{
     margin-bottom:8px;
     letter-spacing:1px;
     text-align:left;
-    margin-left:70px;
+    margin-left:110px;
     
 
 }
@@ -57,51 +59,51 @@ header h2{
     font-weight:bold;
     margin-bottom:20px;
     text-align:left;
-    margin-left:70px;
+    margin-left:110px;
 }
 header p{
     color:#fff;
     font-size:30px;
     line-height:1.8;
-    width:1195px;
-    margin-left:70px;
+    width:1175px;
+    margin-left:110px;
+    margin-right:80px;
     text-align:justify;
 
     transform: scale(0.96);
     transform-origin: top left;
 }
 .best-clubs{
-    padding:40px 0;
+    padding:80px 70px 40px;
     background:#fff;
 }
-
 .best-clubs h2{
-    font-size:34px;
+    font-size:100px;
     font-weight:900;
-    text-align:center;
-    margin-bottom:30px;
     position:relative;
-    transform:translateX(-60px);
+    margin-left:200px;      
+    margin-bottom:30px;
 }
-
 .best-clubs h2::before{
-    content:"";
-    position:absolute;
-    left:50%;
-    transform:translateX(-150px);
-    top:14px;
-    width:0;
-    height:0;
-    border-top:10px solid transparent;
-    border-bottom:10px solid transparent;
-    border-left:15px solid #972d32;
-}
+    content: "";
+    position: absolute;
 
+    left: -95px;      
+    top: 37px;
+
+    width: 75px;
+    height: 75px;
+
+    background: #972d32;
+
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+}
 .club-logos{
     display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:18px;
+    justify-content:flex-start;
+    gap:95px;
+    margin-left:180px;   
+    padding-left:0;
 }
 
 .club-logos div{
@@ -109,30 +111,54 @@ header p{
 }
 
 .club-logo{
-    width:60px;
-    height:60px;
+    width:120px;
+    height:120px;
     display:block;
     margin:0 auto 10px;
 }
 
 .club-logos p{
     color:#972d32;
-    font-size:11px;
+    font-size:14px;
     font-weight:bold;
     line-height:1.4;
     text-align:center;
     white-space:nowrap;
 }
+.red-text{
+    color:#972d32;
+    font-weight:bold;
+}
 
+.black-text{
+    color:#000;
+    font-weight:bold;
+}
 footer{
     background:#972d32;
     color:#fff;
     padding:35px 20px;
-    text-align:center;
+    text-align:left;
+    position:relative;
+    min-height:170px;
+}
+
+footer::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:0;
+    width:130px;
+    height:130px;
+    background:#fff;
+    clip-path:polygon(100% 0, 100% 100%, 0 100%);
 }
 
 footer h2{
-    font-size:22px;
+    font-size:49px;
     line-height:1.5;
-    font-weight:bold;
+    font-weight:900;
+    text-align:left;
+    margin-left:250px;   
+    margin-top:20px; 
 }
