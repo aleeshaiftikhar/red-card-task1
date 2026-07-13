@@ -78,64 +78,66 @@ header p{
     background:#fff;
 }
 .best-clubs h2{
-    font-size:100px;
+    font-size:85px;
     font-weight:900;
     position:relative;
-    margin-left:200px;      
-    margin-bottom:30px;
+    margin-left:160px;
+    margin-bottom:35px;
 }
 .best-clubs h2::before{
     content: "";
     position: absolute;
 
-    left: -95px;      
-    top: 37px;
+    left: -80px;      
+    top: 40px;
 
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
+    margin-bottom:-10px;
 
-    background: #972d32;
+    background: #923535;
 
     clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
 }
 .club-logos{
     display:flex;
-    justify-content:flex-start;
-    gap:95px;
-    margin-left:180px;   
+    justify-content:center;
+    gap:120px;
+    margin-left:0;
     padding-left:0;
 }
-
 .club-logos div{
     text-align:center;
 }
 
 .club-logo{
-    width:120px;
-    height:120px;
+    width:105px;
+    height:105px;
     display:block;
-    margin:0 auto 10px;
+    margin:0 auto 15px;
 }
 
 .club-logos p{
-    color:#972d32;
-    font-size:14px;
+    color:#923535;
+    font-size:20px;
     font-weight:bold;
-    line-height:1.4;
+    line-height:1.5;
     text-align:center;
     white-space:nowrap;
 }
 .red-text{
-    color:#972d32;
+    color:#923535;
     font-weight:bold;
+    font-size:20px;
 }
 
 .black-text{
     color:#000;
     font-weight:bold;
+    font-size:18px;
 }
 footer{
-    background:#972d32;
+    background:#923535;
     color:#fff;
     padding:35px 20px;
     text-align:left;
