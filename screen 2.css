@@ -78,21 +78,21 @@ header p{
     background:#fff;
 }
 .best-clubs h2{
-    font-size:85px;
+    font-size:70px;
     font-weight:900;
     position:relative;
-    margin-left:160px;
+    margin-left:120px;
     margin-bottom:35px;
 }
 .best-clubs h2::before{
     content: "";
     position: absolute;
 
-    left: -80px;      
-    top: 40px;
+    left: -60px;      
+    top: 25px;
 
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     margin-bottom:-10px;
 
     background: #923535;
@@ -101,11 +101,12 @@ header p{
 }
 .club-logos{
     display:flex;
-    justify-content:center;
-    gap:120px;
+    justify-content:flex-start;
+    gap:100px;
     margin-left:0;
-    padding-left:0;
+    padding-left:60px;
 }
+
 .club-logos div{
     text-align:center;
 }
@@ -157,10 +158,12 @@ footer::after{
 }
 
 footer h2{
-    font-size:49px;
+    font-size:52px;
     line-height:1.5;
     font-weight:900;
     text-align:left;
-    margin-left:250px;   
-    margin-top:20px; 
+    margin-left:120px;
+    margin-top:30px;
+
+    width:1150px;
 }

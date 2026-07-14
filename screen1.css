@@ -54,10 +54,10 @@ header img{
 
 .left p {
     width: 92%;
-    font-size: 18px;
+    font-size: 18.5px;
     line-height: 1.6;
     color: #110909;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .left h2 {
@@ -76,11 +76,11 @@ header img{
 }
 .box1 {
     top: 470px;
-    left: 590px;
+    left: 600px;
 }
 .box2 {
     top: 560px;
-    left: 560px;
+    left: 580px;
 }
 
 
@@ -158,14 +158,18 @@ header img{
     width: 12px;
     height: 12px;
     background-color: white;
-    margin-left: 265px;
+    margin-left: 243px;
      position: absolute;
 }
-
-.award-item textarea {
+.award-item textarea{
+    width: calc(100% - 1px);
     height: 80px;
     margin-top: 5px;
     margin-bottom: 0;
+    margin-left: -1px;   
+    resize: none;
+    font-size: 2px;   
+    padding-left: 8px;  
 }
 .success-btn {
     width: 90%;
